@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            .box-container{
+                width: 600px;
+                height: 600px;
+                border: 1px black solid;
+                margin: auto;
+                position: relative;
+            }
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: rgb(226, 43, 43);
+                position: absolute;
+                top: 00px;
+                left: 00px;
+                /*animation-name: box;
+                animation-duration: 5s;*/
+                animation-delay: 1s;
+                animation: box 5s;
+                animation-iteration-count: infinite;  
+                /*animaation: box 1s infinite;*/
+                animation-direction: alternate;
+            }
+            @keyframes box{
+                0%{
+                    top: 0px;
+                    left: 0px;
+                    background-color: rgb(226, 43, 43);
+                }
+                25%{
+                    top: 0px;
+                    left: 400px;
+                    background-color: yellow;
+                }
+                50%{
+                    top: 400px;
+                    left: 400px;
+                    background-color: blue;
+                }
+                75%{
+                    top: 400px;
+                    left: 0px;
+                    background-color: green;
+                }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                    background-color: pink;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box-container">
+            <div class="box">
+
+            </div>
+
+        </div>
+    </body>
+</html>
